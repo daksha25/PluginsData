@@ -1,0 +1,24 @@
+write down the groovy script of function which want to perform
+1) .groovy file
+
+before import files provide the inputs
+def toAddress = props['SourcePath'];
+def toAddress1 = props['DestinationPath'];
+now instead of inputs give the toAddress and toAddress1 as parameter
+save the java files 
+copy all imports 
+
+2)plugin.xml
+
+add step name
+<step-type name="Test Plugin">
+in properties provide the inputs
+
+ <property name="mongodumpPath" required="true">
+          <property-ui type="textAreaBox"
+                       label="mongodumpPath"
+                       description="Provide the Log file path from which you need to read the Test Summary"/>
+
+3)provide groovy file name in arg file part
+
+4) make a zip file and upload it

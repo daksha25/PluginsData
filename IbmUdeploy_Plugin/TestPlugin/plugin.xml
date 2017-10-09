@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+        xmlns="http://www.urbancode.com/PluginXMLSchema_v1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <header>
+      <identifier id="com.urbancode.air.plugin.TestPlugin" version="1" name="Cognizant TestPlugin"/>
+      <description>
+          This plugin will read the Output Log file from the Path given.</description>
+      <tag>Utilities/TestPlugin</tag>
+    </header>
+	
+	<!-- ==================================== -->
+    <!--        Send an SMTP email            -->
+    <!-- ==================================== -->
+    <step-type name="Test Plugin">
+      <description>Check Test </description>
+      <properties>
+        <property name="mongodumpPath" required="true">
+          <property-ui type="textAreaBox"
+                       label="mongodumpPath"
+                       description="Provide the Log file path from which you need to read the Test Summary"/>
+        </property>
+		 <property name="backupfile_path" required="true">
+          <property-ui type="textAreaBox"
+                       label="backupfile_path"
+                       description="Provide the Log file path from which you need to read the Test Summary"/>
+        </property>
+      </properties>
+      <post-processing>
+        <![CDATA[
+          if (properties.get("exitCode") != 0) {
+              properties.put(new java.lang.String("Status"), new java.lang.String("Failure"));
+          }
+          else {
+              properties.put("Status", "Success");
+          }
+       ]]>
+      </post-processing>
+
+      <command program="${GROOVY_HOME}/bin/groovy">
+	    <arg value="-cp" /> 
+        <arg path="classes:lib/uDeployRestClient.jar:lib/activation.jar:lib/mail.jar" /> 
+        <arg file="TestPlugin.groovy" />
+        <arg file="${PLUGIN_INPUT_PROPS}"/>
+        <arg file="${PLUGIN_OUTPUT_PROPS}"/>
+      </command>
+    </step-type>
+</plugin>
