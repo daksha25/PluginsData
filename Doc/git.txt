@@ -1,0 +1,221 @@
+Starting with git :-
+where you want to checkout the code colne the repo first
+
+clone first from gitlab to local
+
+open git bash
+
+
+git clone https://code.cognizant.com/514740/jenkins-plugins.git
+
+Now make whatever changes you want 
+
+goto root folder
+
+git status
+git add -A
+git commit "msg"
+git push origin master
+
+this will push ur changed code to gitlab
+
+Now secnd time want to commit again 
+first need to pull that thing --> goto root directory where .git must be present
+
+git pull origin master
+will pull ur code make changes
+
+git status
+git add -A
+git commit "msg"
+git push origin master
+
+
+if getting error 403 unable to access
+
+go to .git/
+vim config
+and check username or id
+
+save it
+
+some commands
+$ history
+    1  git log
+    2  git clone https://code.cognizant.com/514740/jenkins-plugins.git
+    3  cd jenkins-plugins/clair-docker-scanner/
+    4  git status
+    5  git add -A
+    6  git status
+    7  git commit -m "For creating HTML reports"
+    8  git push origin master
+    9  git status
+   10  git status
+   11  git add -a
+   12  git add -A
+   13  git ststus
+   14  git status
+   15  git add -A
+   16  git commit "Updated code"
+   17  git commit
+   18  git status
+   19  git push origin master
+   20  git clone https://code.cognizant.com/514740/jenkins-plugins.git
+   21  git status
+   22  git status
+   23  git push origin master
+   24  git add -A
+   25  git commit "updated file"
+   26  git commit -m "updated file"
+   27  git push origin master
+   28  git pull
+   29  git push origin master
+   30  git config --global http.proxy http://
+   31  514740:mylifelove@d25@10.36.1.101:8080
+   32  git config --global http.proxy http://514740:November25@@10.36.1.101:8080
+   33  git remote add origin https://code.cognizant.com/514740/jenkins-plugins.git
+   34  git remote add origin https://code.cognizant.com/514740/jenkins-plugins
+   35  git config --global http.proxy http://514740:November25@@10.36.1.101:8080
+   36  git clone https://code.cognizant.com/514740/jenkins-plugins.git
+   37  git status
+   38  git status
+   39  git add -A
+   40  git commit -m "updated files"
+   41  git push origin master
+   42   git pull origin master
+   43  git pull origin master
+   44  git status
+   45  git add -A
+   46  git commit -m "Updated files"
+   47  git push origin master
+   48  git status
+   49  git branch
+   50  ls
+   51  cd clair-docker-scanner/
+   52  LS
+   53  cd src/main/java/org/jenkinsci/plugins/clairdockerscannerbuildstep/
+   54  LS
+   55  VI Text_HTMLConverter.java
+   56  git status
+   57  git add -A
+   58  owd
+   59  pwd
+   60  cd /d/eclipse/eclips\ projects/
+   61  ls
+   62  cd jenkins-plugins/
+   63  ls
+   64  cd clair-docker-scanner/
+   65  ls
+   66  fit status
+   67  git status
+   68  git commit -m "Updated Files"
+   69  git push orign master
+   70  git push origin master
+   71  git master
+   72  git branch
+   73  find / -name .gitconfig
+   74  find /d/ -name .gitconfig
+   75  pwd
+   76  cd /d/eclipse/eclips projects/jenkins-plugins/
+   77  ls
+   78  ls -ltrea
+   79  ls -ltra
+   80  cd ../.git/
+   81  ls
+   82  vi config
+   83  git push origin master
+   84  git config --global user.name "Daksha"
+   85  git config --global user.email "daksha.sapkale@cognizant.com"
+   86  pwd
+   87  cd ../
+   88  ls
+   89  cd clair-docker-scanner/src/main/java/org/jenkinsci/plugins/clairdockerscannerbuildstep/
+   90  ls
+   91  vi Text_HTMLConverter.java
+   92  git status
+   93  git add -A
+   94  git commit -m "Updated Files"
+   95  git push origin master
+   96  git push -u origin master remote
+   97  git push -u origin master
+   98  cd -
+   99  ls
+  100  cd .git/
+  101  vi config
+  102  git pull
+  103  cd ../clair-docker-scanner/
+  104  ls
+  105  git pull
+  106  pwd
+  107  ls
+  108  git status
+  109  git add -A
+  110  git commit -m "Updated Files"
+  111  git branch
+  112  git push oring master
+  113  git push origin master
+  114  pwd
+  115  cd /d/eclipse/eclips\ projects/
+  116  LS
+  117  CD jenkins-plugins/
+  118  L
+  119  ls
+  120  cd jenkins-plugins/
+  121  l
+  122  ls
+  123  cd .git/
+  124  vi config
+  125  git status
+  126  git branch master
+  127  git master
+  128  git branch
+  129  cd ../clair-docker-scanner/
+  130  l
+  131  ls
+  132  git status
+  133  cd src/main/java/org/jenkinsci/plugins/clairdockerscannerbuildstep/
+  134  VI Text_HTMLConverter.java
+  135  git status
+  136  git add -A
+  137  git commit -m "Updated Files"
+  138  git push origin master
+  139  git remote -v
+  140  git status
+  141  git pull
+  142  git pull
+  143  pwd
+  144  ls
+  145  cd ../../../
+  146  pwd
+  147  ls
+  148  cd ../..
+  149  cd ..
+  150  ls
+  151  cd ..
+  152  ls
+  153  rm -rf work/
+  154  cd ../.git/
+  155  vi config
+  156  cd ../clair-docker-scanner/src/main/java/
+  157  cd org/jenkinsci/plugins/clairdockerscannerbuildstep/
+  158  pwd
+  159  ls
+  160  vi Check_QualityGate.java
+  161  rm Check_QualityGate.java
+  162  vi ClairDockerScannerBuilder.java
+  163  vi ClairDockerScannerBuilder.java
+  164  vi Text_HTMLConverter.java
+  165  git status
+  166  pwd
+  167  cd /d/eclipse/eclips projects/jenkins-plugins/clair-docker-scanner/
+  168  ls
+  169  cd /d/eclipse/eclips projects/jenkins-plugins/clair-docker-scanner/
+  170  cd /d/eclipse/eclips\ projects/jenkins-plugins/clair-docker-scanner/
+  171  ls
+  172  git status
+  173  git add -A
+  174  git commit -m "Updated files"
+  175  git push origin master
+  176  pwd
+  177  git history
+  178  history
